@@ -1,3 +1,67 @@
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(#05003c, #003fa2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 2em 1.5em 2em;
+  text-align: left;
+}
+
 h1 {
-  color: red;
+  color: white;
+  font-family: "Raleway", serif;
+  font-size: 2.6em;
+  text-shadow: 3px 3px 5px #272727;
+}
+
+p {
+  color:white;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.transblock {
+  background: rgba(9, 18, 114, 0.3);
+  border: 1px solid #0255c8;
+  border-radius: 25px;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  padding: .7em 3em 2em;
+}
+
+/* HD mobile style sheet */
+@media screen and (min-width: 480px) {
+
+  body {
+    padding: 2em 3em;
+  }
+}
+
+
+/* tablet style sheet */
+@media screen and (min-width: 768px) {
+
+  body {
+    padding: 2em 6em;
+  }
+
+}
+
+
+/* desktop style sheet */
+@media screen and (min-width: 1024px) {
+
+body {
+  padding: 2em 12em;
+}
+
+
+
 }
