@@ -38,30 +38,21 @@ p {
 
 /* HD mobile style sheet */
 @media screen and (min-width: 480px) {
-
   body {
     padding: 2em 3em;
   }
 }
 
-
 /* tablet style sheet */
 @media screen and (min-width: 768px) {
-
   body {
     padding: 2em 6em;
   }
-
 }
-
 
 /* desktop style sheet */
 @media screen and (min-width: 1024px) {
-
-body {
-  padding: 2em 12em;
-}
-
-
-
+  body {
+    padding: 2em 12em;
+  }
 }
