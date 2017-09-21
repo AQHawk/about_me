@@ -16,7 +16,7 @@ if (answer1 ==='n' || answer1 === 'no') {
 var answer2 = prompt('Did I spend 20 years in the military? Y/N').toLowerCase();
 console.log('Answer 2 is ' + answer2);
 if (answer2 ==='y' || answer2 === 'yes') {
-  alert('Correctomundo!..and i have a million stories to tell about it');
+  alert('Correctomundo!..and I have a million stories to tell about it');
 } else {
   alert('You are incorrect. I left the service in 2009 after 20 years.');
 }
@@ -44,6 +44,38 @@ if (answer5 ==='y' || answer5 === 'yes') {
 } else {
   alert('Of course I do. Who doesn\'t like kitties!?');
 }
+
+var guesses = 3;
+
+var answer6 = parseInt(prompt('Now we\'re going to try a little guessing game if you\'re up for it. Can you tell me how many cups of coffee I\'ve had this week already? You get 4 guesses.'));
+while (guesses > 0 ) {
+  if (answer6 === 7) {
+  alert('You are correct! I am dosin on Coffee!');
+  break;
+} else {
+  alert('Sorry. Try again.');
+  guesses--;
+  answer6 = parseInt(prompt('How many?'));
+}
+}
+console.log('Answer 6 is ' + answer6);
+
+
+
+// I had to comment out question 7 for the rest to work. Struggled with it. I'll have to resubmit.
+
+// var answer7 = (prompt('Let's see if you\'re better at this. Can you guess a state that I have lived in besides Washington?');
+//
+// var states;
+// states = ['California', 'Oregon', 'Colorado', 'Texas', 'Missouri', 'Virginia', 'South Carolina'];
+//
+// for (var i=0; i < myArray.length; i++) {
+//   console.log(myArray[i]);
+}
+
+
+
+
 
 
 
