@@ -1,9 +1,12 @@
 'use strict';
 
-
+function userName(){
 var userName = prompt('Hi! What\'s your name?');
 alert('Hi, ' + userName + '. After reading my about me, let\'s see if you can answer some questions. Sound Good?');
+}
+userName();
 
+function answer1(){
 var answer1 = prompt('Was I born and raised in Washington? Y/N').toLowerCase();
 console.log('Answer 1 is ' + answer1);
 if (answer1 ==='n' || answer1 === 'no') {
@@ -12,7 +15,10 @@ if (answer1 ==='n' || answer1 === 'no') {
 } else {
   alert('You are incorrect. I was born and raised in Kansas');
 }
+}
+answer1();
 
+function answer2(){
 var answer2 = prompt('Did I spend 20 years in the military? Y/N').toLowerCase();
 console.log('Answer 2 is ' + answer2);
 if (answer2 ==='y' || answer2 === 'yes') {
@@ -20,7 +26,10 @@ if (answer2 ==='y' || answer2 === 'yes') {
 } else {
   alert('You are incorrect. I left the service in 2009 after 20 years.');
 }
+}
+answer2();
 
+function answer3(){
 var answer3 = prompt('Was I a bartender? Y/N').toLowerCase();
 console.log('Answer 3 is ' + answer3);
 if (answer3 ==='y' || answer3 === 'yes') {
@@ -28,7 +37,10 @@ if (answer3 ==='y' || answer3 === 'yes') {
 } else {
   alert('You are incorrect. I learned the ropes at the Salina Country Club for the first year then tended bar for another three years');
 }
+}
+answer3();
 
+function answer4(){
 var answer4 = prompt('Did I like my work as an IT?').toLowerCase();
 console.log('Answer 4 is ' + answer4);
 if (answer4 ==='n' || answer4 === 'no') {
@@ -36,7 +48,10 @@ if (answer4 ==='n' || answer4 === 'no') {
 } else {
   alert('You are incorrect');
 }
+}
+answer4();
 
+function answer5(){
 var answer5 = prompt('Do I like kitties?').toLowerCase();
 console.log('Answer 5 is ' + answer5);
 if (answer5 ==='y' || answer5 === 'yes') {
@@ -44,34 +59,36 @@ if (answer5 ==='y' || answer5 === 'yes') {
 } else {
   alert('Of course I do. Who doesn\'t like kitties!?');
 }
+}
+answer5();
 
-var guesses = 3;
+var guessesRemaining = 4;
+var cupsCoffee = 8;
+
+while (guessesRemaining > 0) {
 
 var answer6 = parseInt(prompt('Now we\'re going to try a little guessing game if you\'re up for it. Can you tell me how many cups of coffee I\'ve had this week already? You get 4 guesses.'));
-while (guesses > 0 ) {
-  if (answer6 === 7) {
-  alert('You are correct! I am dosin on Coffee!');
-  break;
-} else {
-  alert('Sorry. Try again.');
-  guesses--;
-  answer6 = parseInt(prompt('How many?'));
+   if (answer6.toString() == 'NaN') {
+     alert('Sorry, this needs to be a number');
+     // answer6 = prompt('beexlebub');
+   } else if(answer6 === cupsCoffee) {
+     alert('You are correct! I am dosin on Coffee!');
+     break;
+     // answer = prompt('beexl');
+   } else if(answer6 < cupsCoffee) {
+     alert('Too low!Try again');
+     guessesRemaining--;
+     // answer6 = prompt('too low');
+   } else {
+     alert('Too high! Try again');
+     guessesRemaining--;
+   }
+if (guessesRemaining === 0){
+ alert('Your\re all out of guesses. 8 was the magic number')
 }
-}
+ }
+answer6();
 console.log('Answer 6 is ' + answer6);
-
-
-
-// I had to comment out question 7 for the rest to work. Struggled with it. I'll have to resubmit.
-
-// var answer7 = (prompt('Let's see if you\'re better at this. Can you guess a state that I have lived in besides Washington?');
-//
-// var states;
-// states = ['California', 'Oregon', 'Colorado', 'Texas', 'Missouri', 'Virginia', 'South Carolina'];
-//
-// for (var i=0; i < myArray.length; i++) {
-//   console.log(myArray[i]);
-}
 
 
 
