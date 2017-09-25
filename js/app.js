@@ -2,7 +2,7 @@
 
 function userName(){
 var userName = prompt('Hi! What\'s your name?');
-alert('Hi, ' + userName + '. After reading my about me, let\'s see if you can answer some questions. Sound Good?');
+alert('Hi, ' + userName + '. Ready for a little guessing game? Let\'s see if you can answer some questions about me. Sound Good?');
 }
 userName();
 
@@ -52,21 +52,21 @@ if (answer4 ==='n' || answer4 === 'no') {
 answer4();
 
 function answer5(){
-var answer5 = prompt('Do I like kitties?').toLowerCase();
+var answer5 = prompt('Do I like kittens?').toLowerCase();
 console.log('Answer 5 is ' + answer5);
 if (answer5 ==='y' || answer5 === 'yes') {
-  alert('You are correct! That one was kind of a gimme. Who doesn\'t like kitties!?');
+  alert('You are correct! That one was kind of a gimme. Who doesn\'t like kittens!?');
 } else {
-  alert('Of course I do. Who doesn\'t like kitties!?');
+  alert('Of course I do. Who doesn\'t like kittens!?');
 }
 }
 answer5();
+
 
 var guessesRemaining = 4;
 var cupsCoffee = 8;
 
 while (guessesRemaining > 0) {
-
 var answer6 = parseInt(prompt('Now we\'re going to try a little guessing game if you\'re up for it. Can you tell me how many cups of coffee I\'ve had this week already? You get 4 guesses.'));
    if (answer6.toString() == 'NaN') {
      alert('Sorry, this needs to be a number');
