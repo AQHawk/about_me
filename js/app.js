@@ -84,7 +84,7 @@ var answer6 = parseInt(prompt('Now we\'re going to try a little guessing game if
      guessesRemaining--;
    }
 if (guessesRemaining === 0){
- alert('Your\re all out of guesses. 8 was the magic number')
+ alert('You\'re all out of guesses. 8 was the magic number')
 }
  }
 answer6();
